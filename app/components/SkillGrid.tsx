@@ -18,7 +18,7 @@ const SkillGrid = ({data}: {data: SkillGridProp}) => {
                 <p className='text-xl text-primary-gray font-medium'>Name</p>
             </div>
             {
-                data.skillData.map((skill, index) => 
+                data.skillData.map((skill) => 
                     <div key={skill.name} className='grid grid-cols-2 justify-items-center border p-2'>
                         <Image src={skill.image} alt='React Icon' width={75} height={75}></Image>
                         

@@ -39,7 +39,7 @@ const InfoBox = () => {
                         key={info.info} 
                         className="flex gap-x-3 items-center">
                         {info.icon} 
-                        <p  onClick={() => {info.isLink ? goToURL(info.url, info.type) : ''}}
+                        <p  onClick={() => {if(info.isLink) goToURL(info.url, info.type)}}
                             className={`${info.isLink ? 'hover:underline cursor-pointer text-sky-500' : ''}`}>
                             {info.info}
                         </p>

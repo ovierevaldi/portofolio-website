@@ -20,9 +20,9 @@ export const frontEndSkill : SkillDataProp[] = [
         image: reactLogo,
         content: 
         <p>
-            I've been using react almost in 6 months.
+            I&apos;ve been using react almost in 6 months.
             <br></br>
-            React has been my biggest motivation to keep making website, it's fun and really powerfull.
+            React has been my biggest motivation to keep making website, it&apos;s fun and really powerfull.
             <br></br>
             <span className='block text-center text-base'>I 💓 React</span>
         </p>
