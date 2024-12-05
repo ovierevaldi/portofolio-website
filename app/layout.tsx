@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const robotoFont = Roboto({
-  weight: ["400", "700"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"]
 })
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
   return (
     <html lang="en">
       <body className={`${robotoFont.className}`}>
+        <Toaster position="bottom-center" reverseOrder={false}></Toaster>
         {children}
       </body>
     </html>
