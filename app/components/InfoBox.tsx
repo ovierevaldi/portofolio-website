@@ -25,9 +25,13 @@ const InfoBox = () => {
     }
 
   return (
-    <div className='flex'>
-        <div className='border-2 rounded-md px-10 py-3'>
-            <p className='text-3xl font-bold mb-4 text-center'>Ovie Revaldi Y</p>
+    <div className='flex items-center'>
+        <div className='border-2 shadow-md border-primary-gray rounded-lg px-16 py-4 space-y-4'>
+
+            <p className='text-3xl font-bold text-center'>Ovie Revaldi Y</p>
+
+            <p className="text-center text-xl">Fullstack Developer</p>
+
             <div className="space-y-1">
                 {
                     infoList.map((info) => 

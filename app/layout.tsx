@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 const robotoFont = Roboto({
-  weight: ["400", "700"],
+  weight: ["400", "500", "700"],
   subsets: ["latin"]
 })
 
