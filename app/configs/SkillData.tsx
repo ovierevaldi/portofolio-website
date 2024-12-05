@@ -6,7 +6,8 @@ import tsLogo from '@/public/skills_svg/typescript-official-svgrepo-com.svg'
 import tailwindLogo from '@/public/skills_svg/tailwind-svgrepo-com.svg'
 import viteLogo from '@/public/skills_svg/vite-svgrepo-com.svg'
 import unitTestingLogo from '@/public/skills_svg/unit-testing-logo.png';
-import jestLogo from '@/public/skills_svg/jest-svgrepo-com.svg'
+import jestLogo from '@/public/skills_svg/jest-svgrepo-com.svg';
+import vercelLogo from '@/public/skills_svg/vercel.svg'
 
 export type SkillDataProp = {
     name: string,
@@ -121,7 +122,7 @@ export const backendSkills: SkillDataProp[] = [
 export const devOpsSkills: SkillDataProp[] = [
     {
         name: 'Vercel',
-        image: jestLogo
+        image: vercelLogo
     },
     {
         name: 'Github Actions',
