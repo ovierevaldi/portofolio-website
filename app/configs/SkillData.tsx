@@ -40,32 +40,72 @@ export const frontEndSkill : SkillDataProp[] = [
 
     {
         name: 'Next JS', 
-        image: nextLogo
+        image: nextLogo,
+        content: 
+        <p>
+            NextJS is really helping me creating powerfull and fast react project. 
+            <br></br>
+            <br></br>
+            It has lot of great feature, like SSR and server side function which make it a dealbreaker in terms of Fullstack Development.
+        </p>
     },
 
     {
         name: 'Vite', 
-        image: viteLogo
+        image: viteLogo,
+        content: 
+        <p>
+            Vite is a great choice in terms of creating react project.
+            You can build react project in a sec with very fast compiler to speed up the development process.
+            <br></br>
+            <br></br>
+            Vite is one of my favourite framework to work with React.
+        </p>
     },
 
     {
         name: 'Angular', 
-        image: angularLogo
+        image: angularLogo,
+        content:
+        <p>
+            Angular is my first javascript framework, I learn a lot of development process with angular, especially in my last work. I've been using angular about 4 years from now.
+            <br></br>
+            <br></br>
+            Angular has great feature to offer like components and services to make your web project more organized and reusable.
+        </p>
     },
 
     {
         name: 'Javascript', 
-        image: jsLogo
+        image: jsLogo,
+        content: 
+        <p>
+            Umm, what should i say?
+            <br></br>
+            <br></br>
+            The best programming language of all time. 🔥
+        </p>
     },
 
     {
         name: 'Typescript', 
-        image: tsLogo
+        image: tsLogo,
+        content:
+        <p>
+            It&apos;s hard to work with typescript sometimes -_- but the more you invest your time in it the more feature it has to offer for you.
+            <br></br>
+            <br></br>
+            The most benefit using typescript in a development process is that you SURE that your code is typesafety and you get rid of the unwanted result of your app
+        </p>
     },
 
     {
         name: 'Tailwind', 
-        image: tailwindLogo
+        image: tailwindLogo,
+        content:
+        <p>
+            Who doesn&apos;t love tailwind?
+        </p>
     },
 ];
 
