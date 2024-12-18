@@ -1,13 +1,9 @@
-import Image, { StaticImageData } from 'next/image';
 import React from 'react';
 import ipbLogo from '@/public/images/companies/ipb_logo.svg';
 import titikPintarLogo from '@/public/images/companies/titik_pintar_logo.png';
 import melonGamingLogo from '@/public/images/companies/melon_gaming_logo.jpeg';
 import djarumLogo from '@/public/images/companies/djarum_logo.png';
 import CompaniesProfile, { CompanyInfoProp } from './CompaniesProfile';
-
-
-
 
 const Companies = () => {
     const companyList: CompanyInfoProp[] = [
