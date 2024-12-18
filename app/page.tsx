@@ -11,10 +11,10 @@ export default function Home() {
       
       <div className="flex justify-center">
         <div className="p-4 flex gap-x-10">
-          <InfoBox />
           <div className="w-[200px] h-[200px] relative mx-auto">
             <Image src={profilePic} alt="profile pic" fill={true} className="object-cover rounded-full"></Image>
           </div>
+          <InfoBox />
         </div>
       </div>
 
