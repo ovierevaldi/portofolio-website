@@ -16,14 +16,17 @@ const SkillList = () => {
 
   const toggleSkillUI = () => {
     setIsUIHidden((prev) => !prev);
-
   }
     
   return (
     <div className='space-y-4'>
-        <div className='flex items-center gap-x-4 cursor-pointer' onClick={toggleSkillUI}>
-            <p className='text-primary-blue text-3xl font-medium'>My Tech Skills</p>
-            <BiSolidDownArrow size={22} color='#19ade3' className={`${isUIHidden ? '' : 'rotate-180'}`}/>
+        <div className='flex'>
+            <div
+              onClick={toggleSkillUI} 
+              className='flex items-center gap-x-4 cursor-pointer'>
+              <span className='text-primary-blue text-3xl font-medium' >My Tech Skills</span>
+              <BiSolidDownArrow size={22} color='#19ade3' className={`${isUIHidden ? '' : 'rotate-180'}`}/>
+            </div>
         </div>
         
         <div className={`overflow-hidden ${isUIHidden ? 'h-0' : 'h-auto'}`}>
