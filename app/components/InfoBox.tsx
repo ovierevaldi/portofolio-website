@@ -25,27 +25,28 @@ const InfoBox = () => {
     }
 
   return (
-    <div className='flex items-center'>
-        <div className='border-2 shadow-md border-primary-gray rounded-lg px-16 py-4 space-y-4'>
+    <div 
+        className='border bg-primary-blue shadow-md border-primary-mint rounded p-4 lg:p-5 space-y-3 lg:space-y-5'>
 
-            <p className='text-3xl font-bold text-center'>Ovie Revaldi Y</p>
+        <p className='text-2xl xl:text-3xl font-bold text-center'>Ovie Revaldi Y</p>
 
-            <p className="text-center text-xl">Fullstack Developer</p>
+        <p className="text-center xl:text-xl">Fullstack Developer</p>
 
-            <div className="space-y-1">
-                {
-                    infoList.map((info) => 
-                    <div
-                        key={info.info} 
-                        className="flex gap-x-3 items-center">
-                        {info.icon} 
-                        <p  onClick={() => {if(info.isLink) goToURL(info.url, info.type)}}
-                            className={`${info.isLink ? 'hover:underline cursor-pointer text-sky-500' : ''}`}>
-                            {info.info}
-                        </p>
-                    </div>)
-                }
-            </div>
+        <div className="space-y-1">
+            {
+                infoList.map((info) => 
+                <div
+                    key={info.info} 
+                    className="flex gap-x-3 items-center justify-center">
+                    {info.icon} 
+                    <p  
+                        onClick={() => 
+                            {if(info.isLink) goToURL(info.url, info.type)}}
+                        className={`${info.isLink ? 'hover:underline cursor-pointer' : ''}`}>
+                        {info.info}
+                    </p>
+                </div>)
+            }
         </div>
     </div>
   )

@@ -6,21 +6,44 @@ import SkillList from "./components/SkillList";
 export default function Home() {
 
   return (
-    <div className="p-4 space-y-8">
-      <p className="text-center text-6xl font-bold">My Portofolio Profile</p>
-      
-      <div className="flex justify-center">
-        <div className="p-4 flex gap-x-10">
-          <div className="w-[200px] h-[200px] relative mx-auto">
-            <Image src={profilePic} alt="profile pic" fill={true} className="object-cover rounded-full"></Image>
+    <div className="p-4 space-y-12 lg:space-y-20">
+        <p className="text-center text-4xl xl:text-6xl font-bold text-primary-mint">My Portofolio Profile</p>
+        
+        <div className="space-y-4 md:hidden">
+          <div className="flex justify-center">
+            <div
+              className="w-44 h-44 xl:w-52 xl:h-52 relative">
+              <Image 
+                src={profilePic} 
+                alt="profile pic" 
+                fill={true} 
+                className="object-cover rounded-full">
+              </Image>
+            </div>
           </div>
-          <InfoBox />
+          <div className="max-w-xs mx-auto">
+            <InfoBox />
+          </div>
         </div>
-      </div>
 
-      <div className="flex flex-col items-center">
-        <SkillList></SkillList>
-      </div>
+        <div className="hidden md:flex justify-center gap-x-8 lg:gap-x-12 xl:gap-x-16">
+          <div
+            className="w-44 h-44 xl:w-52 xl:h-52 relative">
+            <Image 
+              src={profilePic} 
+              alt="profile pic" 
+              fill={true} 
+              className="object-cover rounded-full">
+            </Image>
+          </div>
+          <div className="w-full max-w-xs lg:max-w-sm xl:max-w-md">
+            <InfoBox />
+          </div>
+        </div>
+
+        <div className="max-w-7xl mx-auto">
+          <SkillList></SkillList>
+        </div>
     </div>
   );
 }
