@@ -10,7 +10,10 @@ export default {
     extend: {
       colors: {
         ['primary-blue']: '#19ADE3',
-        ['primary-gray']: '#252F35'
+        ['primary-gray']: '#252F35',
+        ['primary-yellow']: '#EAC435',
+        ['primary-mint']: '#03CEA4',
+        ['primary-tomato']: '#FB4D3D'
       },
     },
   },
