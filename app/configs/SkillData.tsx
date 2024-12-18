@@ -7,7 +7,16 @@ import tailwindLogo from '@/public/skills_svg/tailwind-svgrepo-com.svg'
 import viteLogo from '@/public/skills_svg/vite-svgrepo-com.svg'
 import unitTestingLogo from '@/public/skills_svg/unit-testing-logo.png';
 import jestLogo from '@/public/skills_svg/jest-svgrepo-com.svg';
-import vercelLogo from '@/public/skills_svg/vercel.svg'
+import vercelLogo from '@/public/skills_svg/devops/vercel-icon-svgrepo-com.svg';
+import nodeJSLogo from '@/public/skills_svg/backend/node-js-svgrepo-com.svg';
+import expressLogo from '@/public/skills_svg/backend/express-svgrepo-com.svg';
+import nestJSLogo from '@/public/skills_svg/devops/vercel-fill-svgrepo-com.svg';
+import prismaLogo from  '@/public/skills_svg/backend/prisma-svgrepo-com.svg';
+import mongooseLogo from  '@/public/skills_svg/backend/mongodb-svgrepo-com.svg';
+import postgreLogo from  '@/public/skills_svg/backend/postgresql-svgrepo-com.svg';
+import mysqlLogo from  '@/public/skills_svg/backend/mysql-logo-svgrepo-com.svg';
+import mongodbLogo from  '@/public/skills_svg/backend/mongodb-svgrepo-com (1).svg';
+import githubLogo from '@/public/skills_svg/devops/github-142-svgrepo-com.svg';
 
 export type SkillDataProp = {
     name: string,
@@ -80,42 +89,42 @@ export const uTestingSkils: SkillDataProp[] = [
 export const backendSkills: SkillDataProp[] = [
     {
         name: 'Node.JS',
-        image: jestLogo
+        image: nodeJSLogo
     },
 
     {
         name: 'Express',
-        image: jestLogo
+        image: expressLogo
     },
 
     {
         name: 'Nest JS',
-        image: jestLogo
+        image: nestJSLogo
     },
 
     {
         name: 'Prisma',
-        image: jestLogo
+        image: prismaLogo
     },
 
     {
         name: 'Mongoose',
-        image: jestLogo
+        image: mongooseLogo
     },
 
     {
         name: 'PostgreSQL',
-        image: jestLogo
+        image: postgreLogo
     },
 
     {
         name: 'MySQL',
-        image: jestLogo
+        image: mysqlLogo
     },
 
     {
         name: 'MongoDB',
-        image: jestLogo
+        image: mongodbLogo
     },
 ]
 
@@ -126,6 +135,6 @@ export const devOpsSkills: SkillDataProp[] = [
     },
     {
         name: 'Github Actions',
-        image: jestLogo
+        image: githubLogo
     },
 ];
