@@ -2,11 +2,12 @@ import Image from "next/image";
 import InfoBox from "./components/InfoBox";
 import profilePic from "@/public/images/profile-pic.jpg"
 import SkillList from "./components/SkillList";
+import Companies from "./components/project_exp/Companies";
 
 export default function Home() {
 
   return (
-    <div className="p-4 space-y-12 lg:space-y-20">
+    <div className="p-4 space-y-12 lg:space-y-20 max-w-7xl mx-auto">
         <p className="text-center text-4xl xl:text-6xl font-bold text-primary-mint">My Portofolio Profile</p>
         
         <div className="space-y-4 md:hidden">
@@ -41,7 +42,9 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="max-w-7xl mx-auto">
+        <Companies />
+
+        <div className="">
           <SkillList></SkillList>
         </div>
     </div>

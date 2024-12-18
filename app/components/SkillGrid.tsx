@@ -29,7 +29,7 @@ const SkillGrid = ({data}: {data: SkillGridProp}) => {
                         className={`xl:w-8 xl:h-8 ${isUIHidden ? '' : 'rotate-180'}`}/>
                 </button>
             </div>
-            <div className={`${isUIHidden ? 'h-0' : 'h-auto'}`}>
+            <div className={`${isUIHidden ? 'h-0 overflow-hidden' : 'h-auto'}`}>
                 <div className='grid grid-cols-2 justify-items-center border p-2 xl:p-4 rounded-t text-lg xl:text-xl text-primary-gray font-medium'>
                     <p>Tech</p>
                     <p>Name</p>

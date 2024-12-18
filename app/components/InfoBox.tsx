@@ -26,7 +26,7 @@ const InfoBox = () => {
 
   return (
     <div 
-        className='border bg-primary-blue shadow-md border-primary-mint rounded p-4 lg:p-5 space-y-3 lg:space-y-5'>
+        className='border text-white bg-primary-blue shadow-md rounded p-4 lg:p-5 space-y-3 lg:space-y-5'>
 
         <p className='text-2xl xl:text-3xl font-bold text-center'>Ovie Revaldi Y</p>
 

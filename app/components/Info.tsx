@@ -11,7 +11,7 @@ const Info = ({context}: {context: ReactNode}) => {
     };
 
   return (
-    <div className='relative'>
+    <div className='relative inline'>
         <IoIosInformationCircle  
             onMouseEnter={() => hoverInfo(true)} 
             onMouseLeave={() => hoverInfo(false)}
