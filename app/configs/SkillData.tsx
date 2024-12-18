@@ -68,7 +68,7 @@ export const frontEndSkill : SkillDataProp[] = [
         image: angularLogo,
         content:
         <p>
-            Angular is my first javascript framework, I learn a lot of development process with angular, especially in my last work. I've been using angular about 4 years from now.
+            Angular is my first javascript framework, I learn a lot of development process with angular, especially in my last work. I&apos;ve been using angular about 4 years from now.
             <br></br>
             <br></br>
             Angular has great feature to offer like components and services to make your web project more organized and reusable.
