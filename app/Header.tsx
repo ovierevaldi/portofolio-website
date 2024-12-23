@@ -1,7 +1,7 @@
 'use client'
 import React from 'react'
 import DarkMode from './DarkMode'
-import ThemeProvider, { useTheme } from './providers/ThemeProvider'
+import ThemeProvider from './providers/ThemeProvider'
 
 const Header = () => {
   return (

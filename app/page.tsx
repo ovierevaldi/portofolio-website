@@ -10,7 +10,7 @@ export default function Home() {
     <div className="p-4 space-y-12 lg:space-y-20 max-w-7xl mx-auto">
         <p className="text-center text-4xl xl:text-6xl font-bold text-primary-mint">My Portofolio Profile</p>
         
-        {/* <div className="space-y-4 md:hidden">
+        <div className="space-y-4 md:hidden">
           <div className="flex justify-center">
             <div
               className="w-44 h-44 xl:w-52 xl:h-52 relative">
@@ -25,7 +25,7 @@ export default function Home() {
           <div className="max-w-xs mx-auto">
             <InfoBox />
           </div>
-        </div> */}
+        </div>
 
         <div className="hidden md:flex justify-center gap-x-8 lg:gap-x-12 xl:gap-x-16">
           <div
