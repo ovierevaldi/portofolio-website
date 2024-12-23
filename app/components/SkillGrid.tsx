@@ -30,7 +30,7 @@ const SkillGrid = ({data}: {data: SkillGridProp}) => {
                 </button>
             </div>
             <div className={`${isUIHidden ? 'h-0 overflow-hidden' : 'h-auto'}`}>
-                <div className='grid grid-cols-2 justify-items-center border p-2 xl:p-4 rounded-t text-lg xl:text-xl text-primary-gray font-medium'>
+                <div className='grid grid-cols-2 justify-items-center border p-2 xl:p-4 rounded-t text-lg xl:text-xl text-primary-gray font-medium dark:text-white'>
                     <p>Tech</p>
                     <p>Name</p>
                 </div>
@@ -46,7 +46,7 @@ const SkillGrid = ({data}: {data: SkillGridProp}) => {
                             <div 
                                 className='flex items-center gap-x-2'>
                                 <p 
-                                    className='text-center font-semibold text-primary-gray'>
+                                    className='text-center font-semibold text-primary-gray dark:text-white'>
                                     {skill.name}
                                 </p>
                                 {skill.content ?  
