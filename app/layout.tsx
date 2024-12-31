@@ -3,7 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Header from "./Header";
-import Footer from "./components/Common/Footer";
+import Footer from "./components/Common/Footer/Footer";
 
 export const metadata: Metadata = {
   title: "Portofolio Website",
