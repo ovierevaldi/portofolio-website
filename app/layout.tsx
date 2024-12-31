@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import Header from "./Header";
+import Footer from "./components/Common/Footer";
 
 export const metadata: Metadata = {
   title: "Portofolio Website",
@@ -21,6 +22,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
         <Toaster position="bottom-center" reverseOrder={false}></Toaster>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
