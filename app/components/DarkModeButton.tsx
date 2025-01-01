@@ -3,9 +3,9 @@
 import { useState } from "react";
 import { CiLight } from "react-icons/ci";
 import { CiDark } from "react-icons/ci";
-import { useTheme } from "./providers/ThemeProvider";
+import { useTheme } from "../providers/ThemeProvider";
 
-const DarkMode = () => {
+const DarkModeButton = () => {
     const { isDarkMode, toggleDarkMode } = useTheme();
     const [darkMode, setDarkMode] = useState(isDarkMode);
 
@@ -24,4 +24,4 @@ const DarkMode = () => {
     )
 }
 
-export default DarkMode
+export default DarkModeButton
