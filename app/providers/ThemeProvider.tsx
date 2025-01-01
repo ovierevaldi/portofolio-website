@@ -1,6 +1,7 @@
 'use client'
 
 import React, { createContext, useContext, useEffect, useState } from 'react'
+import localStorageService from '../services/local-storage';
 
 type ThemeProviderProps = {
   children: React.ReactNode
@@ -18,8 +19,20 @@ const ThemeProvider = ({children}: ThemeProviderProps) => {
 
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
+    localStorageService().setDarkMode(!isDarkMode);
     return !isDarkMode;
   };
+
+  useEffect(() => {
+    const savedMode = localStorageService().getDarkMode();
+
+    if(savedMode)
+      setIsDarkMode(savedMode);
+    else{
+      localStorageService().setDarkMode(isDarkMode);
+    }
+
+  }, [])
 
   useEffect(() => {
     if(isDarkMode){
