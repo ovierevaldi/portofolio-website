@@ -3,7 +3,7 @@
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail } from "react-icons/ai";
 import { CiCalendarDate } from "react-icons/ci";
-import copyClipboardToast from "../libs/CopyClipboard";
+import copyClipboardToast from "../services/CopyClipboard";
 
 const InfoBox = () => {
     const infoList = [
