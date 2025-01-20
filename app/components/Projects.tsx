@@ -1,4 +1,7 @@
-import Link from "next/link";
+'use client'
+
+import DropdownContent from "./DropdownContent/DropdownContent";
+import { useState } from "react";
 
 const projectDataList: ProjectsDataProp[] = [
   {
@@ -47,36 +50,46 @@ type ProjectsDataProp = {
 };
 
 const Projects = () => {
+  const [isProjectExperienceWindowOpen, setIsProjectExperienceWindowOpen] = useState(true);
+
+  const handleProjectExpBtnClick = () => {
+    setIsProjectExperienceWindowOpen(!isProjectExperienceWindowOpen);
+  }
+
   return (
-    <table>
-        <thead>
-          <tr className="border border-black">
-            <th className="py-4 border border-black">
-              <p className="text-xl font-bold">Name</p>
-            </th>
-            <th>
-              <p className="text-xl font-bold px-4">Link(s)</p>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {
-            projectDataList.map((projectData, index) => 
-              <tr key={index} className="border border-black">
-                <td className="text-center py-4">
-                  <p className="font-bold text-xl">{projectData.title}</p>
-                  <p className="max-w-[600px]">{projectData.description}</p>
-                </td>
-                <td className="text-center border border-black">
-                  <a className="link" href={projectData.link} target="_blank" rel="noopener noreferrer">
-                    {projectData.link_alias}
-                  </a>
-                </td>
-              </tr>
-            )
-          }
-        </tbody>
-    </table>
+    <DropdownContent handleToggleButtonClick={handleProjectExpBtnClick} isOpen={isProjectExperienceWindowOpen} title="Project Experience">
+     <div className="flex justify-center">
+        <table>
+          <thead>
+            <tr className="border border-black">
+              <th className="py-4 border border-black">
+                <p className="text-xl font-bold">Name</p>
+              </th>
+              <th>
+                <p className="text-xl font-bold px-4">Link(s)</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              projectDataList.map((projectData, index) => 
+                <tr key={index} className="border border-black">
+                  <td className="text-center py-4">
+                    <p className="font-bold text-xl">{projectData.title}</p>
+                    <p className="max-w-[600px]">{projectData.description}</p>
+                  </td>
+                  <td className="text-center border border-black">
+                    <a className="link" href={projectData.link} target="_blank" rel="noopener noreferrer">
+                      {projectData.link_alias}
+                    </a>
+                  </td>
+                </tr>
+              )
+            }
+          </tbody>
+        </table>
+     </div>
+    </DropdownContent>
   )
 }
 

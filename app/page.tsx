@@ -6,7 +6,6 @@ import Companies from "./components/project_exp/Companies";
 import Projects from "./components/Projects";
 
 export default function Home() {
-
   return (
     <div className="p-4 space-y-12 lg:space-y-20 max-w-7xl mx-auto">
         <p className="text-center text-4xl xl:text-6xl font-bold text-primary-mint">My Portofolio Profile</p>
@@ -42,11 +41,9 @@ export default function Home() {
             <InfoBox />
           </div>
         </div>
-
-        <div className="flex justify-center">
-          <Projects />
-        </div>
-
+        
+        <Projects />
+        
         <Companies />
 
         <div className="">
