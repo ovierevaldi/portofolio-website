@@ -22,11 +22,13 @@ const DarkModeButton = () => {
 
     return (
         <button onClick={changeMode}>
-            {
-                darkMode ? 
-                <CiDark size={30} /> : 
-                <CiLight size={30}/>
-            }
+            <div className="flex items-center gap-x-2">
+                <p>{darkMode ? 'Too Dark?' : 'Too Bright?'}</p>
+
+                {
+                    darkMode ?<CiDark size={30} /> : <CiLight size={30}/>
+                }
+            </div> 
         </button>
     )
 }
