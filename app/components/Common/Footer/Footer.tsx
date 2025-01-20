@@ -9,13 +9,6 @@ const Footer = () => {
         <p>Made with</p>
         <FaHeart />
       </div>
-      <div>
-        <p>Contact Me: 
-        </p>
-        <p>
-        revaldiovie3@gmail.com
-        </p>
-      </div>
     </div>
   )
 }
