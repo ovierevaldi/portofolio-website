@@ -3,6 +3,7 @@ import InfoBox from "./components/InfoBox";
 import profilePic from "@/public/images/profile-pic.jpg"
 import SkillList from "./components/SkillList";
 import Companies from "./components/project_exp/Companies";
+import Projects from "./components/Projects";
 
 export default function Home() {
 
@@ -40,6 +41,10 @@ export default function Home() {
           <div className="w-full max-w-xs lg:max-w-sm xl:max-w-md">
             <InfoBox />
           </div>
+        </div>
+
+        <div className="flex justify-center">
+          <Projects />
         </div>
 
         <Companies />
