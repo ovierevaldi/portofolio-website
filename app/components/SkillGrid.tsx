@@ -21,13 +21,7 @@ const SkillGrid = ({data}: {data: SkillGridProp}) => {
     return (
         <div className={`${isUIHidden ? 'mb-0' : 'mb-8'}`}>
             <div className='flex mb-2 lg:mb-4'>
-                <button 
-                    onClick={toggleSkillUI}
-                    className='flex items-center gap-x-2 text-primary-tomato'>
-                    <p className='text-lg xl:text-2xl font-medium'>{data.name}</p>
-                    <BiSolidUpArrow
-                        className={`xl:w-8 xl:h-8 ${isUIHidden ? '' : 'rotate-180'}`}/>
-                </button>
+                <p className='text-lg xl:text-2xl font-medium text-primary-tomato'>{data.name}</p>
             </div>
             <div className={`${isUIHidden ? 'h-0 overflow-hidden' : 'h-auto'}`}>
                 <div className='grid grid-cols-2 justify-items-center border p-2 xl:p-4 rounded-t text-lg xl:text-xl text-primary-gray font-medium dark:text-white'>
