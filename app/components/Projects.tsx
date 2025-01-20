@@ -75,8 +75,8 @@ const Projects = () => {
               projectDataList.map((projectData, index) => 
                 <tr key={index} className="border border-black">
                   <td className="text-center py-4">
-                    <p className="font-bold text-xl">{projectData.title}</p>
-                    <p className="max-w-[600px]">{projectData.description}</p>
+                    <p className="font-bold md:text-xl">{projectData.title}</p>
+                    <p className="max-w-[600px] text-sm md:text-base">{projectData.description}</p>
                   </td>
                   <td className="text-center border border-black">
                     <a className="link" href={projectData.link} target="_blank" rel="noopener noreferrer">
